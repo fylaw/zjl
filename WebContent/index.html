@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>车辆安全管理信息系统</title>
+
+  <link rel="stylesheet" href="jquery/jquery-ui.css">
+  <script src="jquery/jquery.js"></script>
+  <script src="jquery/jquery-ui.js"></script>
+
+  <script>
+  $(function() {
+    $( "#menu" ).menu();
+  });
+  </script>
+  <style>
+  .ui-menu { width: 180px; }
+  
+  header {
+  	padding: 0px 10px 0px 10px;
+  	top:0;
+  	left:0;
+  	height:60px;
+  	box-shadow:0 1px 10px rgba(0,0,0,0.1);
+  	background-color: rgba(240,240,240,0.5);
+  	font-family:Helvetica, Georgia, Arial, sans-serif, 黑体;
+  	margin-bottom:5px;
+  }
+  
+ header:after {
+  	clear:both;
+  	content:'';
+  }
+  
+  .tools {
+  	list-style:none;
+  	padding:0px;
+  	float:right;
+  	marging-right:20px;
+  	display:block;
+  }
+  
+	.tools:after {
+	display: table;
+	line-height: 0;
+	content: "";
+	clear:both;
+  }
+  
+  .tools li {
+  	float: left;
+  	display: list-item;
+  	margin:5px;
+  }  
+  
+    .tools li a {
+    color:#777;
+    text-decoration: none;
+    font-size:14px;
+  	padding:10px 15px 10px;
+  }  
+  
+  .brand {
+  	float:left;
+  	line-height:40px;
+  	margin-top:15px;
+  	color: #777;
+	text-shadow: 0 1px 1px #DDD;
+	font-size:32px;
+  }
+  
+  .content {
+  	clear:both;
+  	pdding: 2px 0px 0px 0px;
+  }  
+   
+  
+  nav {
+  	float:left;
+  	margin:5px 5px 5px 5px;
+  }
+  
+  
+  nav a:hover {
+  	text-decoration: none;
+  }
+  
+  article::after {
+  	width:600px;
+  	w
+  }
+  
+  footer {
+  	width:788px;
+  	margin: 2px auto;
+  }
+  
+  #main_content{
+  	height:450px;
+  	scrolling:yes;
+  	overflow: visible;
+  }
+  </style>
+  
+  
+</head>
+<body>
+
+	<header>
+		<div class="brand">车辆安全管理信息系统</div>
+		<div class="nav-collapse">
+			<ul class="tools">
+			<li><a href="javascript:void(0);">首页</a></li>
+			<li><a href="javascript:void(0);">你好,June</a></li>
+			<li><a href="javascript:void(0);">退出</a></li>
+		</ul>
+		</div>
+		
+	</header>
+
+	<div class="content">
+
+		<nav>
+			<ul id="menu">
+			  <li><a href="yearedit.html" target="main_content">年度方针目标</a></li>
+			  <li>安全重点工作</li>
+			  <li>安全组织机构</li>
+			  <li>安全职责标准</li>
+			  <li>安全管理规章</li>
+			  <li>现场作业标准</li>
+			  <li>安全风险管理</li>
+			  <li>安全问题管理</li>
+			  <li>安全专项整治</li>
+			  <li>安全质量分析</li>
+			  <li>安全质量考评</li>
+			  <li>事故故障管理</li>
+			  <li>故障申请奖励</li>
+			  <li>信息处置反馈</li>
+			</ul>	
+		</nav>
+	
+		<article>
+		
+		<iframe id="main_content" name="main_content" src="year/index" frameborder="no"></iframe>
+		
+		</article>
+	
+	</div>
+	
+	<footer>
+		admin@vsis.com
+	</footer>
+</body>
+</html>
